@@ -1,5 +1,4 @@
 #live projects
-
 from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
@@ -46,5 +45,3 @@ index.html
         <li>{{ todo }} <a href="/delete/{{ loop.index0 }}">Delete</a></li>
     {% endfor %}
     </ul>
-</body>
-</html>
