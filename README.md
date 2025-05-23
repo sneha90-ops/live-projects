@@ -1,9 +1,9 @@
 #live projects
+
 from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
-# Sample in-memory todo list
 todos = []
 
 @app.route("/")
@@ -28,7 +28,7 @@ if __name__ == "__main__":
     app.run(debug=True)
 
 
-Template (index.html)
+index.html
 
 <!DOCTYPE html>
 <html>
@@ -46,3 +46,5 @@ Template (index.html)
         <li>{{ todo }} <a href="/delete/{{ loop.index0 }}">Delete</a></li>
     {% endfor %}
     </ul>
+</body>
+</html>
